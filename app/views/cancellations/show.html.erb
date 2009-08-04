@@ -1,0 +1,22 @@
+<p>
+  <b>Cancellation date:</b>
+  <%=h @cancellation.cancellation_date %>
+</p>
+
+<p>
+  <b>Reason:</b>
+  <%=h @cancellation.reason %>
+</p>
+
+<h2>Order(s)</h2>
+<table>
+<% @orders.each do |order| %>
+	<tr>
+	    <td><%=h order.order_date %></td>
+	    <td><%=h order.shipping_date %></td>
+	    <td><%=h order.customer_description %></td>
+	    <td><%=h order.customer %></td>
+	</tr>
+</table>	
+<% end %>
+<%= link_to 'Back', cancellations_path %>

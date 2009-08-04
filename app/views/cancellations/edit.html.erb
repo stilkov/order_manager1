@@ -1,0 +1,24 @@
+<h1>Editing cancellation</h1>
+
+<% form_for(@cancellation) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :cancellation_date %><br />
+    <%= f.date_select :cancellation_date %>
+  </p>
+  <p>
+    <%= f.label :order_id %><br />
+    <%= f.text_field :order_id %>
+  </p>
+  <p>
+    <%= f.label :reason %><br />
+    <%= f.text_field :reason %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @cancellation %> |
+<%= link_to 'Back', cancellations_path %>

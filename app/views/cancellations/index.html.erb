@@ -1,0 +1,23 @@
+<h1>Listing cancellations</h1>
+
+<table>
+  <tr>
+    <th>Cancellation date</th>
+    <th>Order</th>
+    <th>Reason</th>
+  </tr>
+
+<% for cancellation in @cancellations %>
+  <tr>
+    <td><%=h cancellation.cancellation_date %></td>
+    <td><%=h cancellation.reason %></td>
+    <td><%= link_to 'Show', cancellation %></td>
+    <td><%= link_to 'Edit', edit_cancellation_path(cancellation) %></td>
+    <td><%= link_to 'Destroy', cancellation, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New cancellation', new_cancellation_path %>

@@ -1,0 +1,7 @@
+	<p>Order date: <span class="order date"><%=h order.order_date %></span></p>
+	<p>Total: <span class="total"><%=h order.total %></span></p>
+	<p>Customer: <a class="customer"><%=link_to h(order.customer_description), order.customer %></a></p>
+	<p>Billing address: <address class="billing"><%=h order.billing_address %></address></p>
+  	<p>Shipping date: <span class="shipping date"><%=h order.shipping_date %></span></p>
+	<p>Shipping address: <address class="shipping"><%=h order.shipping_address %></address></p>
+	<p>State: <span class="state"><%=h order.state %></span></p>

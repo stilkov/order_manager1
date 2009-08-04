@@ -1,0 +1,21 @@
+<h1>Order Entry</h1>
+
+<% form_for(@order) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :customer %><br />
+    <%= f.text_field :customer %>
+  </p>
+  <p>
+    <%= f.label :billing_address %><br />
+    <%= f.text_field :billing_address %>
+  </p>
+  <p>
+    <%= f.label :shipping_address %><br />
+    <%= f.text_field :shipping_address %>
+  </p>
+  <p>
+	<input type="submit" />
+  </p>
+<% end %>

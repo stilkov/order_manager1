@@ -1,0 +1,27 @@
+<h1>Listing <%= @state %> orders</h1>
+<% form_tag({}, :method => :get) do |f| %>
+    <%= label_tag :state %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%= select_tag :state, options_for_select(@order_states) %>
+    <input type="submit">
+  </p>
+<% end %>
+
+
+<table>
+  <tr>
+    <th>Order date</th>
+    <th>Total</th>
+    <th>Customer</th>
+  </tr>
+
+<% for order in @orders %>
+  <tr>
+    <td><%=link_to order.order_date, order_path(order) %></td>
+    <td>€ <%=h order.total %></td>
+    <td><a href="<%= order.customer%>"><%=h order.customer_description %></a></td>
+    <td><%=h order.state %></a></td>
+  </tr>
+<% end %>
+</table>
+<br />
+
+<%= link_to 'New order', new_order_path %>

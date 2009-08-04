@@ -1,0 +1,36 @@
+<h1>Editing order</h1>
+
+<% form_for(@order) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :order_date %><br />
+    <%= f.date_select :order_date %>
+  </p>
+  <p>
+    <%= f.label :shipping_date %><br />
+    <%= f.date_select :shipping_date %>
+  </p>
+  <p>
+    <%= f.label :customer_description %><br />
+    <%= f.text_field :customer_description %>
+  </p>
+  <p>
+    <%= f.label :customer %><br />
+    <%= f.text_field :customer %>
+  </p>
+  <p>
+    <%= f.label :billing_address %><br />
+    <%= f.text_field :billing_address %>
+  </p>
+  <p>
+    <%= f.label :shipping_address %><br />
+    <%= f.text_field :shipping_address %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @order %> |
+<%= link_to 'Back', orders_path %>

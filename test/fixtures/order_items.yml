@@ -1,0 +1,62 @@
+one_1:
+  order: one
+  quantity: 2
+  product: http://example.com/products/231
+  product_description: MP3 Player
+  price: 199
+
+one_2:
+  order: one
+  quantity: 1
+  product: http://example.com/products/352
+  product_description: Laptop X65
+  price: 799
+  
+one_3:
+  order: one
+  quantity: 1
+  product: http://example.com/products/110
+  product_description: Display 1521T
+  price: 299
+  
+one_4:
+  order: one
+  quantity: 2
+  product: http://example.com/products/123
+  product_description: 1250GB HD
+  price: 199
+  
+two_1:
+  order: two
+  quantity: 1
+  product: http://example.com/products/352
+  product_description: Laptop X65
+  price: 799
+
+two_2:
+  order: two
+  quantity: 1
+  product: http://example.com/products/110
+  product_description: Display 1521T
+  price: 299
+
+three_1:
+  order: three
+  quantity: 5
+  product: http://example.com/products/231
+  product_description: MP3 Player
+  price: 199
+
+three_2:
+  order: three
+  quantity: 4
+  product: http://example.com/products/123
+  product_description: 1250GB HD
+  price: 199
+
+three_3:
+  order: three
+  quantity: 1
+  product: http://example.com/products/352
+  product_description: Laptop X65
+  price: 799

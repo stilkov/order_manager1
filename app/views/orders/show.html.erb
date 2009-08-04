@@ -1,0 +1,9 @@
+<div class="order">
+	<%= render :partial => 'order', :locals => { :order => @order } %>
+	<table class="items">
+		<th>Product</th><th>Amount</th><th>Price</th>
+	<%= render :partial => 'item', :collection => @order.order_items %>
+	</table>
+<div class="order">
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>
