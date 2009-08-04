@@ -3,9 +3,10 @@
 ### Quick intro (not really useful if you don't know Rails):
 
 * create database with `rake db:create`
-* migrate to correct DB schema with `rake db:migrate#´`
+* migrate to correct DB schema with `rake db:migrate`
+* import some test data with `rake db:fixtures:load`
 * start the server with script/server
-* set up a proxy forwarding, e.g. using Apache, from om.example.com:80 to localhost:3000. If you don't know how to do this, replace om.example.com below with localhost:3000
+* set up a proxy forwarding, e.g. using Apache, from om.example.com:80 to localhost:3000. If you don't know how to do this, replace `om.example.com` below with `localhost:3000`
 
 Then you can try a few things:
 
